@@ -1,0 +1,3 @@
+.rate-grid article{display:grid;grid-template-rows:34px 58px auto}.rate-grid h3{line-height:34px}.rate-grid p{min-height:0;margin:10px 0 0;line-height:1.55}.rate-grid dl{margin:0}
+@media(max-width:800px){.rate-grid article{grid-template-rows:34px 58px auto}}
+
