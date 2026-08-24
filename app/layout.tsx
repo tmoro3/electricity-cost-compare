@@ -4,11 +4,11 @@ import './globals.css';
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://tmoro3.github.io/electricity-cost-compare/'),
-  title: '電気料金比較 | TEPCO vs エネパル',
-  description: '東京電力の実請求額と、同じ使用量でのエネパル推定額を比較します。',
+  title: '電力契約の答え合わせ | 東京電力への乗り換え検証',
+  description: '実際の東京電力の請求額と、エネパルを継続していた場合の推定額を毎月比較します。',
   openGraph: {
-    title: '電気料金比較 | TEPCO vs エネパル',
-    description: '実際に払った金額と、選べたはずの金額を月ごとに比較。',
+    title: '電力契約の答え合わせ',
+    description: '東京電力に変えた判断は、正しかったか。実請求とエネパル継続時の推定額を比較します。',
     images: ['/electricity-cost-compare/social-preview.png'],
   },
 };
