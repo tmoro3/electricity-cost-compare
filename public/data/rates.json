@@ -1,0 +1,8 @@
+{
+  "updatedAt": "2026-08-24",
+  "variable": [{"month":"2026-09","tepcoFuel":-10.96,"enepalFuel":0,"enepalProcurement":null,"support":-4.5,"renewable":4.18,"status":"エネパル調達単価待ち","sources":["https://www.tepco.co.jp/ep/private/fuelcost2/new/index-j.html","https://enepal.co.jp/palpower-energy/power-procurument/"]}],
+  "fixed": [
+    {"start":"2026-09","company":"TEPCO","lightBase":1870.5,"tiers":[29.8,36.4,40.49],"powerKw":4,"powerBase":1098.05,"powerSummer":27.14,"powerOther":25.57,"stabilityLight":0,"stabilityPower":0,"plan":"従量電灯B 60A ＋ 低圧電力 4kW","source":"https://www.tepco.co.jp/ep/private/plan/chargelist01.html"},
+    {"start":"2026-09","company":"エネパル","lightBase":1716,"tiers":[19.88,26.48,29.5],"powerKw":3,"powerBase":1088.34,"powerSummer":17.37,"powerOther":15.8,"stabilityLight":726,"stabilityPower":363,"plan":"パルプレミアムS B 60A ＋ パル動力プレミアムS 3kW","source":"https://enepal.co.jp/palpower-energy/area-price/kanto/"}
+  ]
+}

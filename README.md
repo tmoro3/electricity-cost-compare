@@ -16,4 +16,3 @@ npm run dev
 ```
 
 料金データは `public/data/rates.json` で管理します。変更後は `npm run rates:validate` で検証してください。
-

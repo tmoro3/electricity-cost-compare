@@ -1,0 +1,39 @@
+name: Monthly official-rate check
+on:
+  schedule:
+    - cron: '17 0 29 * *'
+  workflow_dispatch:
+    inputs:
+      target_month:
+        description: Target billing month (YYYY-MM)
+        required: false
+permissions:
+  contents: write
+  issues: write
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: 22, cache: npm}
+      - run: npm ci
+      - name: Check official pages
+        env:
+          TARGET_MONTH: ${{ inputs.target_month }}
+        run: npm run rates:update
+      - run: npm run rates:validate
+      - name: Commit check result
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git add public/data/rates.json rate-check.json
+          git diff --cached --quiet || (git commit -m "chore: monthly official-rate check" && git push)
+      - name: Open verification issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+          TARGET_MONTH: ${{ inputs.target_month }}
+        run: |
+          TITLE="料金単価の確認: ${TARGET_MONTH:-翌月分}"
+          gh issue list --state open --search "$TITLE in:title" --json number --jq 'length' | grep -q '^0$' || exit 0
+          gh issue create --title "$TITLE" --body "公式ページの自動確認が完了しました。rate-check.jsonを参照し、TEPCO燃料費調整、エネパル電源調達調整費、支援単価、料金改定の有無を公式資料で確認して public/data/rates.json を確定してください。"
