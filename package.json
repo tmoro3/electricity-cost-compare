@@ -9,7 +9,6 @@
     "dev": "vinext dev",
     "build": "vinext build",
     "build:pages": "next build",
-    "rates:update": "node scripts/update-rates.mjs",
     "rates:validate": "node scripts/validate-rates.mjs",
     "start": "vinext start",
     "lint": "eslint . --ignore-pattern dist --ignore-pattern .next"
