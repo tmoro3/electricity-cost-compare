@@ -5,7 +5,7 @@
 - 使用量と請求額はブラウザの端末内だけに保存
 - CSVによるバックアップと復元
 - 基本料金・従量単価は適用開始月ごとに履歴管理
-- GitHub Actionsが毎月公式ページを確認し、要確認事項をIssue化
+- 公式資料を確認して料金データを手動更新
 - GitHub Pagesへ自動公開
 
 ## 開発
@@ -15,4 +15,4 @@ npm install
 npm run dev
 ```
 
-料金データは `public/data/rates.json` で管理します。変更後は `npm run rates:validate` で検証してください。
+料金データは `public/data/rates.json` で管理します。複数月をまとめて追加でき、変更後は `npm run rates:validate` で検証してください。GitHubへ反映するとGitHub Pagesが自動更新されます。
