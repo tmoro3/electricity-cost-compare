@@ -1,0 +1,29 @@
+{
+  "checkedAt": "2026-09-30T03:22:42.286Z",
+  "target": "2026-10",
+  "checks": {
+    "tepcoTargetPublished": false,
+    "enepalTargetMentioned": false,
+    "fixedRatePageAvailable": true
+  },
+  "fetches": {
+    "tepco": {
+      "ok": false,
+      "url": "https://www4.tepco.co.jp/ep/private/fuelcost2/newlist/index-j.html",
+      "error": "https://www4.tepco.co.jp/ep/private/fuelcost2/newlist/index-j.html: HTTP 403"
+    },
+    "enepal": {
+      "ok": true,
+      "url": "https://enepal.co.jp/palpower-energy/power-procurument/"
+    },
+    "enepalRates": {
+      "ok": true,
+      "url": "https://enepal.co.jp/palpower-energy/area-price/kanto/"
+    }
+  },
+  "urls": {
+    "tepco": "https://www4.tepco.co.jp/ep/private/fuelcost2/newlist/index-j.html",
+    "enepal": "https://enepal.co.jp/palpower-energy/power-procurument/",
+    "enepalRates": "https://enepal.co.jp/palpower-energy/area-price/kanto/"
+  }
+}
