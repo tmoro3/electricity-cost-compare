@@ -1,4 +1,5 @@
 import type { Metadata } from 'next';
+import Link from 'next/link';
 
 export const metadata: Metadata = {
   title: '2026年10月の所感 | 電力契約の答え合わせ',
@@ -7,12 +8,12 @@ export const metadata: Metadata = {
 
 export default function OctoberInsight(){
   return <main className="insight-page">
-    <header className="site-header"><a className="brand" href="../../"><span className="brand-mark">E</span><span>電力契約の答え合わせ</span></a><nav><a href="../../#compare">比較表</a><a href="../../#events">出来事</a><a href="../../#rates">料金データ</a></nav><a className="update-chip" href="../../">比較表に戻る</a></header>
+    <header className="site-header"><Link className="brand" href="/"><span className="brand-mark">E</span><span>電力契約の答え合わせ</span></Link><nav><Link href="/#compare">比較表</Link><Link href="/#events">出来事</Link><Link href="/#rates">料金データ</Link></nav><Link className="update-chip" href="/">比較表に戻る</Link></header>
 
     <article>
       <section className="insight-hero">
         <p className="eyebrow">OCTOBER 2026 REVIEW</p>
-        <h1>初回比較で、なぜ<br/>約1万円の差が出たのか。</h1>
+        <h1>初回比較で、なぜ<br/>約1万円の差が<br/>出たのか。</h1>
         <p className="insight-lead">東京電力への切り替え後、初めて1か月分がそろった2026年10月。料金差は会社の良し悪しを単純に示すものではなく、基本・従量料金と、その月の調整額を組み合わせた結果です。</p>
       </section>
 
@@ -54,7 +55,7 @@ export default function OctoberInsight(){
         <p className="insight-caption">東京電力の金額は実際の請求額、エネパルは公式単価を同じ使用量に当てはめた推定額です。端数処理や個別条件により、実際の請求とは差が生じる場合があります。</p>
       </section>
 
-      <a className="insight-back" href="../../"><span>←</span><div><small>BACK TO COMPARISON</small><strong>比較表に戻る</strong></div></a>
+      <Link className="insight-back" href="/"><span>←</span><div><small>BACK TO COMPARISON</small><strong>比較表に戻る</strong></div></Link>
     </article>
 
     <footer><p>特定の事業者を評価するものではなく、契約変更を同一条件で振り返るための個人記録です。</p><span>2026年10月6日 記録</span></footer>
