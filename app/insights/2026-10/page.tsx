@@ -1,0 +1,62 @@
+import type { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  title: '2026年10月の所感 | 電力契約の答え合わせ',
+  description: '東京電力の実請求とエネパル継続時の推定額に、なぜ約1万円の差が出たのかを整理します。',
+};
+
+export default function OctoberInsight(){
+  return <main className="insight-page">
+    <header className="site-header"><a className="brand" href="../../"><span className="brand-mark">E</span><span>電力契約の答え合わせ</span></a><nav><a href="../../#compare">比較表</a><a href="../../#events">出来事</a><a href="../../#rates">料金データ</a></nav><a className="update-chip" href="../../">比較表に戻る</a></header>
+
+    <article>
+      <section className="insight-hero">
+        <p className="eyebrow">OCTOBER 2026 REVIEW</p>
+        <h1>初回比較で、なぜ<br/>約1万円の差が出たのか。</h1>
+        <p className="insight-lead">東京電力への切り替え後、初めて1か月分がそろった2026年10月。料金差は会社の良し悪しを単純に示すものではなく、基本・従量料金と、その月の調整額を組み合わせた結果です。</p>
+      </section>
+
+      <section className="insight-result" aria-label="2026年10月の比較結果">
+        <div><span>東京電力 実請求</span><strong>27,213円</strong></div>
+        <div><span>エネパル 継続時推定</span><strong>37,375円</strong></div>
+        <div className="insight-difference"><span>今回の差</span><strong>10,162円</strong><small>東京電力が安い</small></div>
+      </section>
+
+      <section className="insight-body">
+        <div className="insight-heading"><span>01</span><div><p>WHAT HAPPENED</p><h2>通常料金では、エネパルの方が低かった</h2></div></div>
+        <p>電灯398kWh・動力407kWhを同じ条件で計算すると、基本料金と電力量料金の部分だけでは、エネパルの方が約9,311円低い試算でした。今回の差は、基本料金や通常の従量単価だけで生じたものではありません。</p>
+
+        <div className="insight-heading"><span>02</span><div><p>THE TURNING POINT</p><h2>月ごとの調整額が、結果を逆転させた</h2></div></div>
+        <p>東京電力では燃料費調整額が合計約7,487円の値引きになりました。一方、エネパルの試算には9月度の電源調達調整費が約13,715円加わります。安定供給維持費と国の支援も含めて計算すると、通常料金でのエネパルの優位を上回り、最終的に東京電力が10,162円安い結果になりました。</p>
+
+        <aside className="insight-note">
+          <span>比較の考え方</span>
+          <p>エネパルには、市場価格が基準を超えた部分を3か月後へ繰り延べる制度があります。これは値引きではなく支払時期の変更なので、この比較では最終的に支払う費用を使用月に計上しています。</p>
+        </aside>
+
+        <div className="insight-heading"><span>03</span><div><p>WHAT THIS MEANS</p><h2>1か月だけでは、まだ結論にしない</h2></div></div>
+        <p>今回の結果は、9月の市場価格と両社の調整方法が大きく影響しています。別の月には差が縮まったり、結果が逆転したりする可能性もあります。「エネパルは高い」「東京電力なら常に安い」と結論づけず、同じ方法で1年間積み上げ、累計額で切り替え判断を検証します。</p>
+      </section>
+
+      <section className="insight-method">
+        <div><p>対象期間</p><strong>2026.09.03 — 10.04</strong><span>32日間</span></div>
+        <div><p>使用量</p><strong>805 kWh</strong><span>電灯398＋動力407</span></div>
+        <div><p>比較方法</p><strong>同一使用量</strong><span>実請求 対 継続時推定</span></div>
+      </section>
+
+      <section className="insight-sources">
+        <div className="insight-heading"><span>04</span><div><p>SOURCES</p><h2>参照した公式資料</h2></div></div>
+        <div className="insight-source-links">
+          <a href="https://www4.tepco.co.jp/ep/private/fuelcost2/newlist/index-j.html" target="_blank" rel="noreferrer">東京電力｜燃料費調整制度 ↗</a>
+          <a href="https://enepal.co.jp/wp/wp-content/uploads/2026/09/enepal_dengenchotatsuchousei_202609.pdf" target="_blank" rel="noreferrer">エネパル｜2026年9月度 電源調達調整費 ↗</a>
+          <a href="https://enepal.co.jp/palpower-energy/flat-regulations/" target="_blank" rel="noreferrer">エネパル｜支払繰延規定 ↗</a>
+        </div>
+        <p className="insight-caption">東京電力の金額は実際の請求額、エネパルは公式単価を同じ使用量に当てはめた推定額です。端数処理や個別条件により、実際の請求とは差が生じる場合があります。</p>
+      </section>
+
+      <a className="insight-back" href="../../"><span>←</span><div><small>BACK TO COMPARISON</small><strong>比較表に戻る</strong></div></a>
+    </article>
+
+    <footer><p>特定の事業者を評価するものではなく、契約変更を同一条件で振り返るための個人記録です。</p><span>2026年10月6日 記録</span></footer>
+  </main>;
+}
