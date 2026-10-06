@@ -40,7 +40,7 @@ export default function OctoberInsight(){
               <tr><td>調達調整費</td><td>0円</td><td>＋6,781円</td><td>＋6,781円</td></tr>
               <tr><td>国の支援</td><td>−1,393円</td><td>−1,393円</td><td>0円</td></tr>
               <tr><td>安定供給維持費</td><td>0円</td><td>＋726円</td><td>＋726円</td></tr>
-              <tr><td>再エネ発電賦課金</td><td>＋1,663円</td><td>＋1,664円</td><td>＋1円</td></tr>
+              <tr><td>再エネ発電賦課金</td><td>＋1,663円</td><td>＋1,663円</td><td>0円</td></tr>
             </tbody>
             <tfoot><tr><th>電灯 小計</th><th>13,928円</th><th>19,536円</th><th>＋5,608円</th></tr></tfoot>
           </table>
