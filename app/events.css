@@ -1,0 +1,16 @@
+.season-split{display:grid;grid-template-columns:1fr 1fr 1fr;align-items:end;gap:12px;border-top:1px solid var(--line);padding:14px 0;color:#6c736e;font-size:11px}
+.mini-field{display:flex;flex-direction:column;align-items:flex-end;gap:4px}
+.mini-field input{width:86px;font-size:20px}
+.mini-field b{font-size:9px}
+.price-detail{margin:-14px 0 20px;text-align:right;color:#b9c9bf;font-size:10px}
+.estimate-note{line-height:1.7}
+.timeline{margin:70px clamp(22px,5vw,72px)}
+.timeline-list{border-top:1px solid var(--ink)}
+.timeline-list article{display:grid;grid-template-columns:120px 70px 1fr;gap:20px;padding:22px 0;border-bottom:1px solid var(--line);align-items:start}
+.timeline-list time{font:800 13px Georgia,serif}
+.timeline-list>article>span{justify-self:start;padding:5px 8px;background:var(--green);color:#fff;font-size:9px;font-weight:800}
+.timeline-list h3{margin:0 0 6px;font-size:16px}
+.timeline-list p{margin:0;color:#5f6861;font-size:12px;line-height:1.7}
+.timeline-list a{display:inline-block;margin-top:8px;color:var(--green);font-size:10px;font-weight:800;border-bottom:1px solid currentColor}
+@media(max-width:480px){.season-split{grid-template-columns:1fr 1fr}.season-split>span:first-child{grid-column:1/-1}.timeline{margin-inline:14px}.timeline-list article{grid-template-columns:1fr auto;gap:8px 12px}.timeline-list article div{grid-column:1/-1}}
+
