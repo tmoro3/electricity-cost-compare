@@ -30,6 +30,21 @@ export default function OctoberInsight(){
         <div className="insight-heading"><span>02</span><div><p>THE TURNING POINT</p><h2>月ごとの調整額が、結果を逆転させた</h2></div></div>
         <p>東京電力では燃料費調整額が合計約7,487円の値引きになりました。一方、エネパルの試算には9月度の電源調達調整費が約13,715円加わります。安定供給維持費と国の支援も含めて計算すると、通常料金でのエネパルの優位を上回り、最終的に東京電力が10,162円安い結果になりました。</p>
 
+        <div className="difference-table-wrap">
+          <table className="difference-table">
+            <thead><tr><th>料金項目</th><th>差額への影響</th><th>有利になる側</th></tr></thead>
+            <tbody>
+              <tr><td>基本料金・電力量料金</td><td className="enepal-advantage">−9,311円</td><td>エネパル</td></tr>
+              <tr><td>安定供給維持費</td><td>＋1,089円</td><td>東京電力</td></tr>
+              <tr><td>エネパル 電源調達調整費</td><td>＋13,715円</td><td>東京電力</td></tr>
+              <tr><td>国の支援</td><td className="enepal-advantage">−2,818円</td><td>エネパル</td></tr>
+              <tr><td>東京電力 燃料費調整額</td><td>＋7,487円</td><td>東京電力</td></tr>
+            </tbody>
+            <tfoot><tr><th>最終的な差額</th><th>＋10,162円</th><th>東京電力が安い</th></tr></tfoot>
+          </table>
+          <p>「＋」はエネパル推定額が東京電力より高くなる方向、「−」は安くなる方向を示します。金額は表示用に円単位へ丸めています。</p>
+        </div>
+
         <aside className="insight-note">
           <span>比較の考え方</span>
           <p>エネパルには、市場価格が基準を超えた部分を3か月後へ繰り延べる制度があります。これは値引きではなく支払時期の変更なので、この比較では最終的に支払う費用を使用月に計上しています。</p>
