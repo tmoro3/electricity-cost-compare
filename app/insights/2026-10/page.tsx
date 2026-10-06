@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 export default function OctoberInsight(){
   return <main className="insight-page">
-    <header className="site-header"><Link className="brand" href="/"><span className="brand-mark">E</span><span>電力契約の答え合わせ</span></Link><nav><Link href="/#compare">比較表</Link><Link href="/#events">出来事</Link><Link href="/#rates">料金データ</Link></nav><Link className="update-chip" href="/">比較表に戻る</Link></header>
+    <header className="site-header"><Link className="brand" href="/"><span className="brand-mark">E</span><span>電力契約の答え合わせ</span></Link><nav><Link href="/#compare">比較表</Link><Link href="/#events">出来事</Link><Link href="/#rates">料金データ</Link><Link href="/insights">所感</Link></nav><Link className="update-chip" href="/">比較表に戻る</Link></header>
 
     <article>
       <section className="insight-hero">
