@@ -28,21 +28,22 @@ export default function OctoberInsight(){
         <p>電灯398kWh・動力407kWhを同じ条件で計算すると、基本料金と電力量料金の部分だけでは、エネパルの方が約9,311円低い試算でした。今回の差は、基本料金や通常の従量単価だけで生じたものではありません。</p>
 
         <div className="insight-heading"><span>02</span><div><p>THE TURNING POINT</p><h2>月ごとの調整額が、結果を逆転させた</h2></div></div>
-        <p>東京電力では燃料費調整額が合計約7,487円の値引きになりました。一方、エネパルの試算には9月度の電源調達調整費が約13,715円加わります。安定供給維持費と国の支援も含めて計算すると、通常料金でのエネパルの優位を上回り、最終的に東京電力が10,162円安い結果になりました。</p>
+        <p>東京電力の請求書上の燃料費調整額約7,487円の値引きには、国の支援約2,818円が含まれています。対応する項目をそろえると、国の支援と再エネ賦課金は両社同額です。一方、東京電力では支援を除く燃料費調整が約4,669円の値引き、エネパルでは9月度の調達調整費が約13,715円の加算となり、この月次調整の違いが結果を逆転させました。</p>
 
-        <div className="difference-table-wrap">
-          <table className="difference-table">
-            <thead><tr><th>料金項目</th><th>差額への影響</th><th>有利になる側</th></tr></thead>
+        <div className="difference-table-wrap" style={{overflowX:'auto'}}>
+          <table className="difference-table" style={{minWidth:'620px'}}>
+            <thead><tr><th>対応する料金項目</th><th>東京電力</th><th>エネパル</th><th>差額</th></tr></thead>
             <tbody>
-              <tr><td>基本料金・電力量料金</td><td className="enepal-advantage">−9,311円</td><td>エネパル</td></tr>
-              <tr><td>安定供給維持費</td><td>＋1,089円</td><td>東京電力</td></tr>
-              <tr><td>エネパル 電源調達調整費</td><td>＋13,715円</td><td>東京電力</td></tr>
-              <tr><td>国の支援</td><td className="enepal-advantage">−2,818円</td><td>エネパル</td></tr>
-              <tr><td>東京電力 燃料費調整額</td><td>＋7,487円</td><td>東京電力</td></tr>
+              <tr><td>基本料金・電力量料金</td><td>31,336円</td><td>22,025円</td><td className="enepal-advantage">−9,311円</td></tr>
+              <tr><td>燃料費調整<br/><small>国の支援を除く</small></td><td>−4,669円</td><td>0円</td><td>＋4,669円</td></tr>
+              <tr><td>調達調整費</td><td>0円</td><td>＋13,715円</td><td>＋13,715円</td></tr>
+              <tr><td>国の支援</td><td>−2,818円</td><td>−2,818円</td><td>0円</td></tr>
+              <tr><td>安定供給維持費</td><td>0円</td><td>＋1,089円</td><td>＋1,089円</td></tr>
+              <tr><td>再エネ発電賦課金</td><td>＋3,365円</td><td>＋3,365円</td><td>0円</td></tr>
             </tbody>
-            <tfoot><tr><th>最終的な差額</th><th>＋10,162円</th><th>東京電力が安い</th></tr></tfoot>
+            <tfoot><tr><th>合計</th><th>27,213円</th><th>37,375円</th><th>＋10,162円</th></tr></tfoot>
           </table>
-          <p>「＋」はエネパル推定額が東京電力より高くなる方向、「−」は安くなる方向を示します。金額は表示用に円単位へ丸めています。</p>
+          <p>差額は「エネパル − 東京電力」。＋は東京電力が安く、−はエネパルが安いことを示します。内訳は表示用に円単位へ丸めているため、内訳の単純合計と各社合計に1円程度の差が生じる場合があります。</p>
         </div>
 
         <aside className="insight-note">
@@ -64,6 +65,7 @@ export default function OctoberInsight(){
         <div className="insight-heading"><span>04</span><div><p>SOURCES</p><h2>参照した公式資料</h2></div></div>
         <div className="insight-source-links">
           <a href="https://www4.tepco.co.jp/ep/private/fuelcost2/newlist/index-j.html" target="_blank" rel="noreferrer">東京電力｜燃料費調整制度 ↗</a>
+          <a href="https://enepal.co.jp/palpower-energy/power-procurument/" target="_blank" rel="noreferrer">エネパル｜電源調達調整費の仕組み ↗</a>
           <a href="https://enepal.co.jp/wp/wp-content/uploads/2026/09/enepal_dengenchotatsuchousei_202609.pdf" target="_blank" rel="noreferrer">エネパル｜2026年9月度 電源調達調整費 ↗</a>
           <a href="https://enepal.co.jp/palpower-energy/flat-regulations/" target="_blank" rel="noreferrer">エネパル｜支払繰延規定 ↗</a>
         </div>
