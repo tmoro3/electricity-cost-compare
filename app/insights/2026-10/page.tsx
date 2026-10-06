@@ -32,18 +32,37 @@ export default function OctoberInsight(){
 
         <div className="difference-table-wrap" style={{overflowX:'auto'}}>
           <table className="difference-table" style={{minWidth:'620px'}}>
+            <caption style={{textAlign:'left',padding:'0 0 12px',fontWeight:800}}>従量電灯｜398kWh（両社60A）</caption>
             <thead><tr><th>対応する料金項目</th><th>東京電力</th><th>エネパル</th><th>差額</th></tr></thead>
             <tbody>
-              <tr><td>基本料金・電力量料金</td><td>31,336円</td><td>22,025円</td><td className="enepal-advantage">−9,311円</td></tr>
-              <tr><td>燃料費調整<br/><small>国の支援を除く</small></td><td>−4,669円</td><td>0円</td><td>＋4,669円</td></tr>
-              <tr><td>調達調整費</td><td>0円</td><td>＋13,715円</td><td>＋13,715円</td></tr>
-              <tr><td>国の支援</td><td>−2,818円</td><td>−2,818円</td><td>0円</td></tr>
-              <tr><td>安定供給維持費</td><td>0円</td><td>＋1,089円</td><td>＋1,089円</td></tr>
-              <tr><td>再エネ発電賦課金</td><td>＋3,365円</td><td>＋3,365円</td><td>0円</td></tr>
+              <tr><td>基本料金・電力量料金</td><td>15,967円</td><td>11,759円</td><td className="enepal-advantage">−4,208円</td></tr>
+              <tr><td>燃料費調整<br/><small>国の支援を除く</small></td><td>−2,308円</td><td>0円</td><td>＋2,308円</td></tr>
+              <tr><td>調達調整費</td><td>0円</td><td>＋6,781円</td><td>＋6,781円</td></tr>
+              <tr><td>国の支援</td><td>−1,393円</td><td>−1,393円</td><td>0円</td></tr>
+              <tr><td>安定供給維持費</td><td>0円</td><td>＋726円</td><td>＋726円</td></tr>
+              <tr><td>再エネ発電賦課金</td><td>＋1,663円</td><td>＋1,664円</td><td>＋1円</td></tr>
             </tbody>
-            <tfoot><tr><th>合計</th><th>27,213円</th><th>37,375円</th><th>＋10,162円</th></tr></tfoot>
+            <tfoot><tr><th>電灯 小計</th><th>13,928円</th><th>19,536円</th><th>＋5,608円</th></tr></tfoot>
           </table>
-          <p>差額は「エネパル − 東京電力」。＋は東京電力が安く、−はエネパルが安いことを示します。内訳は表示用に円単位へ丸めているため、内訳の単純合計と各社合計に1円程度の差が生じる場合があります。</p>
+
+          <table className="difference-table" style={{minWidth:'620px',marginTop:'36px'}}>
+            <caption style={{textAlign:'left',padding:'0 0 12px',fontWeight:800}}>低圧電力・動力｜407kWh（東京電力4kW／エネパル3kW）</caption>
+            <thead><tr><th>対応する料金項目</th><th>東京電力</th><th>エネパル</th><th>差額</th></tr></thead>
+            <tbody>
+              <tr><td>基本料金・電力量料金</td><td>15,369円</td><td>10,266円</td><td className="enepal-advantage">−5,103円</td></tr>
+              <tr><td>燃料費調整<br/><small>国の支援を除く</small></td><td>−2,361円</td><td>0円</td><td>＋2,361円</td></tr>
+              <tr><td>調達調整費</td><td>0円</td><td>＋6,934円</td><td>＋6,934円</td></tr>
+              <tr><td>国の支援</td><td>−1,425円</td><td>−1,425円</td><td>0円</td></tr>
+              <tr><td>安定供給維持費</td><td>0円</td><td>＋363円</td><td>＋363円</td></tr>
+              <tr><td>再エネ発電賦課金</td><td>＋1,701円</td><td>＋1,701円</td><td>0円</td></tr>
+            </tbody>
+            <tfoot><tr><th>低圧・動力 小計</th><th>13,285円</th><th>17,839円</th><th>＋4,554円</th></tr></tfoot>
+          </table>
+
+          <table className="difference-table" style={{minWidth:'620px',marginTop:'36px'}}>
+            <tfoot><tr><th>電灯＋動力 合計</th><th>27,213円</th><th>37,375円</th><th>＋10,162円</th></tr></tfoot>
+          </table>
+          <p>差額は「エネパル − 東京電力」。＋は東京電力が安く、−はエネパルが安いことを示します。東京電力は実請求、エネパルは公式単価による推定です。内訳は円単位へ丸めているため、行の単純合計と小計に1円程度の差が生じる場合があります。</p>
         </div>
 
         <aside className="insight-note">
