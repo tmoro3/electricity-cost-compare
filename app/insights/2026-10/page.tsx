@@ -70,7 +70,22 @@ export default function OctoberInsight(){
           <p>エネパルには、市場価格が基準を超えた部分を3か月後へ繰り延べる制度があります。これは値引きではなく支払時期の変更なので、この比較では最終的に支払う費用を使用月に計上しています。</p>
         </aside>
 
-        <div className="insight-heading"><span>03</span><div><p>WHAT THIS MEANS</p><h2>1か月だけでは、まだ結論にしない</h2></div></div>
+        <div className="insight-heading"><span>03</span><div><p>BREAK-EVEN POINT</p><h2>最終請求で、回収すべき費用が確定した</h2></div></div>
+        <p>2026年10月24日に確認したエネパルの最終請求は、電灯52,677円と動力37,769円の合計90,446円でした。ただし、この全額を切り替えによる損失とはしません。当期間の通常料金40,431円、過去月からの繰延分16,447円、明細料220円は、月次料金または過去の使用分として別に扱います。</p>
+        <div className="difference-table-wrap" style={{overflowX:'auto'}}>
+          <table className="difference-table" style={{minWidth:'620px'}}>
+            <thead><tr><th>損益分岐点の内訳</th><th>金額</th><th>扱い</th></tr></thead>
+            <tbody>
+              <tr><td>エネパル最終請求</td><td>90,446円</td><td>確認資料</td></tr>
+              <tr><td>解約関連費用</td><td>33,348円</td><td>回収対象</td></tr>
+              <tr><td>10月の料金差</td><td>10,162円</td><td>回収済み</td></tr>
+            </tbody>
+            <tfoot><tr><th>損益分岐点まで</th><th>23,186円</th><th>回収中</th></tr></tfoot>
+          </table>
+        </div>
+        <p>今後は、東京電力が安かった月の差額を33,348円から差し引きます。累計差額がこの金額に達した時点を損益分岐点とし、その後の差額を切り替え後の純効果として記録します。</p>
+
+        <div className="insight-heading"><span>04</span><div><p>WHAT THIS MEANS</p><h2>1か月だけでは、まだ結論にしない</h2></div></div>
         <p>今回の結果は、9月の市場価格と両社の調整方法が大きく影響しています。別の月には差が縮まったり、結果が逆転したりする可能性もあります。「エネパルは高い」「東京電力なら常に安い」と結論づけず、同じ方法で1年間積み上げ、累計額で切り替え判断を検証します。</p>
       </section>
 
@@ -81,7 +96,7 @@ export default function OctoberInsight(){
       </section>
 
       <section className="insight-sources">
-        <div className="insight-heading"><span>04</span><div><p>SOURCES</p><h2>参照した公式資料</h2></div></div>
+        <div className="insight-heading"><span>05</span><div><p>SOURCES</p><h2>参照した公式資料</h2></div></div>
         <div className="insight-source-links">
           <a href="https://www4.tepco.co.jp/ep/private/fuelcost2/newlist/index-j.html" target="_blank" rel="noreferrer">東京電力｜燃料費調整制度 ↗</a>
           <a href="https://enepal.co.jp/palpower-energy/power-procurument/" target="_blank" rel="noreferrer">エネパル｜電源調達調整費の仕組み ↗</a>
@@ -94,6 +109,6 @@ export default function OctoberInsight(){
       <Link className="insight-back" href="/"><span>←</span><div><small>BACK TO COMPARISON</small><strong>比較表に戻る</strong></div></Link>
     </article>
 
-    <footer><p>特定の事業者を評価するものではなく、契約変更を同一条件で振り返るための個人記録です。</p><span>2026年10月6日 記録</span></footer>
+    <footer><p>特定の事業者を評価するものではなく、契約変更を同一条件で振り返るための個人記録です。</p><span>2026年10月24日 更新</span></footer>
   </main>;
 }
